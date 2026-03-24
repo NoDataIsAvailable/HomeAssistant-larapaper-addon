@@ -11,6 +11,4 @@ ports:
 init: false
 image: "ghcr.io/usetrmnl/larapaper"
 
-privileged:
-  - SETGID
-  - SETUID
+apparmor: false
