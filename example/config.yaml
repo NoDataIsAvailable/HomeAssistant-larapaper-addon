@@ -10,3 +10,7 @@ ports:
   8080/tcp: 2300
 init: false
 image: "ghcr.io/usetrmnl/larapaper"
+
+privileged:
+  - SETGID
+  - SETUID
