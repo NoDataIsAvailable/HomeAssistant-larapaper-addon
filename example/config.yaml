@@ -1,8 +1,8 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Example add-on
+name: Larapaper
 version: "0.31.0"
-slug: example
-description: Example add-on
+slug: BYOS for TRMNL
+description: larapaper
 url: "https://github.com/home-assistant/addons-example/tree/main/example"
 arch:
   - amd64
@@ -10,3 +10,5 @@ ports:
   8080/tcp: 2300
 init: false
 image: "ghcr.io/usetrmnl/larapaper"
+webui: http://[HOST]:[PORT:2300]/
+panel_icon: mdi:mdiChartBoxOutline
