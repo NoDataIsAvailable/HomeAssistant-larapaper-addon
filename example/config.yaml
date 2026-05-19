@@ -14,3 +14,5 @@ webui: http://[HOST]:[PORT:2300]/
 panel_icon: mdi:mdiChartBoxOutline
 # Deactivate AppArmor for Testing
 apparmor: false
+environment:
+  DB_DATABASE: /data/storage/database.sqlite
