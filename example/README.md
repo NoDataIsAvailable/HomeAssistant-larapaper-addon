@@ -1,9 +1,20 @@
-# Home Assistant Add-on: Example add-on
+# Larapaper Home Assistant Add-on
+Minimal Home Assistant add-on to run Larapaper. This add-on simply runs the upstream Larapaper application.
 
-_Example add-on to use as a blueprint for new add-ons._
+Repository
+- Upstream Larapaper: https://github.com/usetrmnl/larapaper
 
-![Supports aarch64 Architecture][aarch64-shield]
-![Supports amd64 Architecture][amd64-shield]
+What this add-on does
+- Runs Larapaper inside the add-on container.
+- Persists application files in the add-on data folder.
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+Installation
+1. Add this add-on repository to Home Assistant (Supervisor → Add-on Store → ⋮ → Repositories).
+2. Install and start the add-on.
+
+Data
+- Persistent data is stored in the add-on data directory; do not delete it unless you want to reset Larapaper.
+
+Logs & troubleshooting
+- View logs from the add-on page in Supervisor.
+- For Larapaper-specific issues or configuration, consult the upstream repo.
