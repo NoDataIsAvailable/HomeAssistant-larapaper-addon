@@ -9,7 +9,7 @@ arch:
 ports:
   8080/tcp: 2300
 init: false
-image: "ghcr.io/usetrmnl/larapaper"
+image: "ghcr.io/nodataisavailable/larapaper"
 webui: http://[HOST]:[PORT:2300]/
 panel_icon: mdi:mdiChartBoxOutline
 # Deactivate AppArmor for Testing
