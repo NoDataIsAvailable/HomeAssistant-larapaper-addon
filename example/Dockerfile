@@ -1,3 +1,4 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM ghcr.io/usetrmnl/larapaper
+
+COPY ./start.sh /etc/entrypoint.d/0-start.sh
+RUN chmod +x /etc/entrypoint.d/0-start.sh
